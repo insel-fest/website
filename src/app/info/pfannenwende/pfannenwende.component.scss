@@ -1,0 +1,190 @@
+    body {
+      font-family: 'Bahnschrift';
+      font-weight: 400;
+      height: 100vh;
+      font-size: 1.75rem;
+
+      padding-top: 50px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: white;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    thead {
+      background-color: #333;
+      color: white;
+    }
+
+    th,
+    td {
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    tbody tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    td:nth-child(1) {
+      font-weight: bold;
+      color: #222;
+    }
+
+    td:nth-child(3) {
+      font-style: italic;
+      color: #555;
+    }
+
+    .lineupsection {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      text-align: center;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+    }
+
+    .lineup-table {
+      max-width: 100%;
+      overflow-x: auto;
+      margin: 2rem 0;
+      font-family: 'Segoe UI', sans-serif;
+      border-radius: 10px;
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.95rem;
+        background-color: #f9fafb;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        margin-top: 25px;
+      }
+
+      th,
+      td {
+        padding: 0.8rem 1.2rem;
+        text-align: left;
+        border-bottom: 1px solid #e2f0eb;
+      }
+
+      thead {
+        background-color: #f9fafb;
+        border-bottom: 2px solid #cbd5e0;
+
+        th {
+          font-weight: 600;
+          color: #2d3748;
+        }
+      }
+
+      tbody tr:hover {
+        background-color: #f1f5f9;
+      }
+
+      @media (max-width: 600px) {
+        table {
+          font-size: 0.85rem;
+        }
+
+        th,
+        td {
+          padding: 0.6rem 0.8rem;
+        }
+      }
+    }
+
+    .artist-grid {
+      display: flex;
+      max-width: 80vw;
+      flex-direction: row;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 50px;
+      margin-bottom: 150px;
+    }
+
+    .artist-card {
+      background-color: #ffffff;
+      max-width: 500px;
+      height: auto;
+
+      border-radius: 0.75rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      font-family: "Bahnschrift";
+      font-weight: 400;
+
+    }
+
+    .artist-card:hover {
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+
+    }
+
+    .artist-image {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      max-width: 100%;
+      gap: 20px;
+    }
+
+
+
+    .artist-image img {
+
+
+      max-width: 70%;
+      max-height: 400px;
+      object-fit: scale-down;
+      border-radius: 10px;
+      margin-top: 20px;
+
+    }
+
+    .artist-image2 img {
+      max-width: 45%;
+    }
+
+    .artist-content {
+      padding: 3rem;
+    }
+
+    .artist-content h3 {
+      margin-top: 0;
+      font-size: 1.2rem;
+      color: #000000;
+    }
+
+    .artist-content p {
+      margin: 0.5rem 0 1rem;
+      color: #000000;
+      line-height: 1.5;
+    }
+
+    .artist-links a {
+      margin-right: 0.8rem;
+      color: #3182ce;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    .artist-links a:hover {
+      text-decoration: underline;
+    }
