@@ -44,7 +44,7 @@ jobs:
       - name: Build Angular App
         run: |
           if [ "${{ steps.branch.outputs.name }}" = "main" ]; then
-            npm run build -- --prod
+            npm run build -- --base-href ""
           else
             npm run build -- --base-href "/${{ github.event.repository.name }}/${{ steps.branch.outputs.name }}/"
           fi
