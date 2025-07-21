@@ -32,7 +32,7 @@ export class AppComponent {
 
   // Zwei erlaubte Passwörter
   private passwords = {
-    guest: 'wirfüruns',
+    guest: 'inselaffe',
     admin: 'orgaoverload'
   };
 

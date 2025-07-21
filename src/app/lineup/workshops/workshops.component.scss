@@ -11,7 +11,7 @@
       text-align: center;
       color: #333;
       margin-bottom: 30px;
-            margin-top: 50px;
+      margin-top: 50px;
     }
 
     table {
@@ -128,7 +128,7 @@
       flex-direction: column;
       font-family: "Bahnschrift";
       font-weight: 400;
-      margin-bottom:40px;
+      margin-bottom: 40px;
     }
 
     .artist-card:hover {
@@ -189,15 +189,16 @@
       text-decoration: underline;
     }
 
-    ul{
-       list-style-type: none;
+    ul {
+      list-style-type: none;
     }
 
-        @media(max-width: 600px) {
+    @media(max-width: 600px) {
 
-      .artist-grid{
+      .artist-grid {
         display: block;
       }
+
       .artist-card {
         max-width: 90vw;
       }
