@@ -2,7 +2,7 @@
 <div class="password-overlay" *ngIf="!accessGranted">
   <div class="password-box">
     <h2>Einlass nur für echte Inselaffen</h2>
-    <p>Bitte Festivalmotto eingeben:</p>
+    <p>Bitte Passwort eingeben:</p>
     <input type="password" [(ngModel)]="passwordInput" (keydown.enter)="checkPassword()" />
     <button (click)="checkPassword()">Einloggen</button>
     <p *ngIf="wrongPassword" class="error">Falsches Passwort</p>
