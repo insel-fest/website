@@ -28,7 +28,7 @@ import { ZeltenparkenComponent } from './info/zeltenparken/zeltenparken.componen
 export class AppComponent {
   title = 'Inselfest2025';
 
-   accessGranted = true;
+   accessGranted = false;
   passwordInput = '';
   wrongPassword = false;
   userRole: 'admin' | 'guest' | null = null;

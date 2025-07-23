@@ -1,5 +1,5 @@
 <!-- Passwort-Overlay -->
-<div class="password-overlay" *ngIf="false">
+<div class="password-overlay" *ngIf="!accessGranted">
   <div class="password-box">
     <h2>Einlass nur für echte Inselaffen</h2>
     <p>Bitte Festivalmotto eingeben:</p>
@@ -9,7 +9,7 @@
   </div>
 </div>
 
-<ng-container *ngIf="true">
+<ng-container *ngIf="accessGranted">
     <app-navbar></app-navbar>
   <router-outlet></router-outlet>
 </ng-container>
