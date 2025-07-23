@@ -11,11 +11,7 @@
       text-align: center;
       color: #333;
       margin-bottom: 30px;
-      margin-top:50px;
-    }
-    h2 {
-         margin-bottom: 30px;
-      margin-top:30px;
+            margin-top: 50px;
     }
 
     table {
@@ -111,19 +107,18 @@
     }
 
     .artist-grid {
-      display: flex;
-      max-width: 80vw;
-      flex-direction: row;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
       gap: 40px;
-      flex-wrap: wrap;
-      margin-top: 50px;
-      margin-bottom: 150px;
+      justify-content: center;
+      max-width: 100%;
+      margin: 50px auto 150px;
     }
+
 
     .artist-card {
       background-color: #ffffff;
-      width: 500px;
+      max-width: 500px;
       height: auto;
 
       border-radius: 0.75rem;
@@ -133,7 +128,7 @@
       flex-direction: column;
       font-family: "Bahnschrift";
       font-weight: 400;
-
+      margin-bottom: 40px;
     }
 
     .artist-card:hover {
@@ -168,11 +163,11 @@
     }
 
     .artist-content {
-      padding: 3rem;
+      padding: 1rem;
     }
 
     .artist-content h3 {
-     
+      margin-top: 0;
       font-size: 1.2rem;
       color: #000000;
     }
@@ -194,6 +189,23 @@
       text-decoration: underline;
     }
 
-    .mt{
-      margin-top: 30px;
+    @media(max-width: 600px) {
+
+      .artist-grid{
+        display: block;
+      }
+      .artist-card {
+        max-width: 90vw;
+      }
+
+      .spalten {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 90vw;
+      }
+    }
+
+       ul {
+      list-style-type: none;
     }
