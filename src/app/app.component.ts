@@ -13,12 +13,15 @@ import { PfannenwendeComponent } from './info/pfannenwende/pfannenwende.componen
 import { AnreiseComponent } from './info/anreise/anreise.component';
 import { LageplanComponent } from './info/lageplan/lageplan.component';
 import { TicketsComponent } from './tickets/tickets.component';
+import { MitbringenComponent } from './inselfest/mitbringen/mitbringen.component';
+import { MitmachenComponent } from './inselfest/mitmachen/mitmachen.component';
+import { ZeltenparkenComponent } from './info/zeltenparken/zeltenparken.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CommonModule,LageplanComponent, TicketsComponent, AnreiseComponent,PfannenwendeComponent, LandingPageComponent, WorkshopsComponent, DrummherumComponent, NavbarComponent, FormsModule, MusikComponent, RouterModule],
+  imports: [RouterOutlet, CommonModule,LageplanComponent,ZeltenparkenComponent, MitbringenComponent, MitmachenComponent, TicketsComponent, AnreiseComponent,PfannenwendeComponent, LandingPageComponent, WorkshopsComponent, DrummherumComponent, NavbarComponent, FormsModule, MusikComponent, RouterModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

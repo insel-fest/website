@@ -7,6 +7,9 @@ import { PfannenwendeComponent } from './info/pfannenwende/pfannenwende.componen
 import { AnreiseComponent } from './info/anreise/anreise.component';
 import { LageplanComponent } from './info/lageplan/lageplan.component';
 import { TicketsComponent } from './tickets/tickets.component';
+import { MitmachenComponent } from './inselfest/mitmachen/mitmachen.component';
+import { MitbringenComponent } from './inselfest/mitbringen/mitbringen.component';
+import { ZeltenparkenComponent } from './info/zeltenparken/zeltenparken.component';
 
 //import { Component } from '@angular/core';
 //import { LineupComponent } from './lineup/lineup.component';
@@ -21,7 +24,11 @@ export const routes: Routes = [
   { path: 'drummherum', component: DrummherumComponent },
   { path: 'pfannenwende', component: PfannenwendeComponent },
   { path: 'anreise', component: AnreiseComponent },
-  { path: 'lageplan', component: LageplanComponent},
-  { path: 'tickets', component: TicketsComponent},
+  { path: 'lageplan', component: LageplanComponent },
+  { path: 'tickets', component: TicketsComponent },
+  { path: 'mitmachen', component: MitmachenComponent },
+  { path: 'mitbringen', component: MitbringenComponent },
+  { path: 'zeltenparken', component:ZeltenparkenComponent},
+
   // { path: 'inselfest', component: InselfestComponent }
 ];

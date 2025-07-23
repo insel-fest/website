@@ -15,9 +15,7 @@ a:hover {
   text-decoration: underline;
 }
 
-h1 {
-  padding-bottom: 50px;
-}
+
 
 .fixed-width {
   margin: 0 auto;
@@ -327,6 +325,16 @@ td:nth-child(3) {
   margin-bottom: 100px;
 }
 
+section{
+  margin-top: 0px;
+}
+
+@media(max-width: 900px){
+  .artist-content p {
+    font-size: 20px;
+}
+}
+
 
 
 @media(max-width:1150px) {
@@ -335,4 +343,6 @@ td:nth-child(3) {
     margin-right: 50px;
   }
 }
+
+
 
